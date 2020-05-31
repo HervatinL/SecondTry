@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Aulas de Javascript</title>
+        <meta charset="utf-8">
+        <style>
+            header {
+                background-color: aqua;
+                color:brown;
+                
+            }
+            article {
+                width: 100%;
+                
+            }
+            .coluna1 {
+                width: 58%;
+                margin: 1%;
+                height: 50px;
+                background-color: red;
+                color:aqua;
+                font-size: 2em;
+                
+                float: left;
+            }
+            .coluna2 {
+                width: 38%;
+                margin: 1%;
+                height: 50px;
+                color:crimson;
+                font-size: 2em;
+                background-color: blue;
+                float: right;
+            }
+        
+        </style>
+        <script>
+             var megasena = new Array();
+             var sorteio;
+             function ordenarNumeros (a, b){
+                 return a - b;
+             }
+             var i = 0;
+             while (i < 6){
+                 sorteio = Math.ceil(Math.random()*60);
+                 if (megasena.indexOf(sorteio) < 0){
+                        megasena.push(sorteio);
+                 i++;
+                     }
+             }
+             megasena.sort(ordenarNumeros);
+             console.log(megasena);
+            
+        </script>
+    </head>
+    <body>
+        <header> Título </header>
+        <article>
+            <section class="coluna1"> parte 1</section>
+            <section class="coluna2"> parte 2</section>
+        </article>
+    </body>
+</html>
