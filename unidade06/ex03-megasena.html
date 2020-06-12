@@ -1,37 +1,81 @@
 <html>
     <head>
         <title>Aulas de Javascript</title>
-        <meta charset="utf-8">
+        <meta charset="utf-8"> 
+        
+        <link href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+        
         <style>
-            header {
+            
+             header {
                 background-color: saddlebrown;
                 color:whitesmoke;
+                width: 100%;
+                height: 50px;
+                font-size: 30px; 
+                text-align: center; 
                 
             }
+            
             article {
-                width: 100%;
-                
+                width: 100%; 
+                height: 600px;
+            
             }
             .coluna1 {
-                width: 58%;
-                margin: 1%;
-                height: 50px;
+                width: 31.1%;
+                margin: 0.3%;
+                padding: 0.8%;
+                height: 600px;
                 background-color: red;
                 color:aqua;
-                font-size: 2em;
-                
+                text-align: center;
+                font-size: 3em;
+                font-family: 'Piedra', cursive;
                 float: left;
             }
             .coluna2 {
-                width: 38%;
-                margin: 1%;
-                height: 50px;
+                width: 31.1%;
+                margin: 0.3%;
+                padding: 0.8%;
+                height: 600px;
                 color:crimson;
-                font-size: 2em;
+                font-size: 3em;
+                font-family: 'Dancing Script', cursive;
+                text-align: center;
                 background-color: blue;
                 float: right;
             }
-        
+            .coluna3 {
+                width: 31.2%;
+                margin: 0.3%;
+                padding: 0.8%; 
+                height: 600px;
+                background-color: greenyellow;
+                color:fuchsia;
+                font-size: 3em;
+                font-family: 'Indie Flower', cursive;
+                text-align: center;
+                float: left;
+                
+            }
+            article.p {
+                text-align: justify;
+                color: black;
+            }
+           
+            footer {
+                width: 100%;
+                height: 30px;
+                padding: 5px;
+                clear: both;
+                background-color: saddlebrown;
+                font-size: 20px;
+                text-align: center;
+                color: whitesmoke;
+            }
         </style>
         <script>
              var megasena = new Array();
@@ -53,10 +97,20 @@
         </script>
     </head>
     <body>
-        <header> Título </header>
-        <article>
-            <section class="coluna1"> parte 1</section>
-            <section class="coluna2"> parte 2</section>
+        <main>
+            <header> Testando fontes </header>
+            <article>
+            <section class="coluna1"> Fonte 1: Piedra <br> By: Sudtipos
+            <p>Texto Texto Texto Texto Texto Texto Texto Texto Texto</p>
+            </section>
+            <section class="coluna2"> Fonte 2: Dancing Script <br> By: Impallari Type 
+            <p>Texto Texto Texto Texto Texto Texto Texto Texto Texto</p>
+            </section>
+            <section class="coluna3"> Fonte 3: Indie Flower <br> By: Kimberly Geswein
+            <br><img src="flower.jpg" width="15%" height="15%"><p>Texto Texto Texto Texto Texto Texto Texto Texto Texto</p>
+            </section>
         </article>
+        <footer> <b>Criado por Lucas C. Hervatin</b></footer>
+        </main>    
     </body>
 </html>
